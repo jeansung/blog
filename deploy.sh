@@ -9,7 +9,7 @@
 # Cyan         0;36     Light Cyan    1;36
 # Light Gray   0;37     White         1;37
 
-echo -e "${CYAN}Deploying updates to GitHub...${NC}"
+echo -e "${CYAN} Deploying updates to GitHub... ${NC}"
 CYAN='\033[0;36m'
 NC='\033[0m'
 
