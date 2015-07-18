@@ -1,0 +1,18 @@
+---
+title: "Code Carrel"
+baseurl: "http://jeansung.github.io/blog"
+theme: "material-design"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+canonifyurls: true
+params:
+  linkedin: "jeansung"
+  github: "jeansung"
+  tumblr: "meanjeantherecessqueen"
+  twitter: "jeansung94"
+  instagram: "jeansung94"
+---
+
