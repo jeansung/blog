@@ -1,9 +1,7 @@
 +++
 Categories = [
-  "Jean's Journey",
-  "Musings", 
-  "Spotlights and Solutions",
-  "Projects"]
+  "Jean's Journey"
+]
 Tags = []
 date = "2015-07-16T17:54:38-07:00"
 title = "Why I did this"
