@@ -5,55 +5,50 @@
     <link>http://jeansung.github.io/blog/categories/musings/</link>
     <description>Recent content in Musings on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Jul 2015 17:54:38 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2015 18:19:43 -0700</lastBuildDate>
     <atom:link href="http://jeansung.github.io/blog/categories/musings/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Why I did this</title>
-      <link>http://jeansung.github.io/blog/post/why-I-did-this/</link>
-      <pubDate>Thu, 16 Jul 2015 17:54:38 -0700</pubDate>
+      <title>The only books I read (anymore)</title>
+      <link>http://jeansung.github.io/blog/post/good-books/</link>
+      <pubDate>Fri, 17 Jul 2015 18:19:43 -0700</pubDate>
       
-      <guid>http://jeansung.github.io/blog/post/why-I-did-this/</guid>
-      <description>&lt;p&gt;Partly because I was curious about newfangled technology and partly because I need to try something out for more than 20 minutes.&lt;/p&gt;
+      <guid>http://jeansung.github.io/blog/post/good-books/</guid>
+      <description>&lt;p&gt;I used to read a lot. I grew up reading lots of books from fantasy (all of Harry Potter like many) to cheesy teen romance novels. I even read a book once (okay the entire series) that was written in the style of an IM conversation.&lt;/p&gt;
 
-&lt;p&gt;I was eating lunch at work and looking at articles about new technology components- fancy web engines and really pretty interfaces. I’m always enthralled and I always think I should try it but it never gets very far. I start, the supposedly easy to use tool doesn’t compile twenty minutes in or I grow bored and I leave.&lt;/p&gt;
+&lt;p&gt;In high school I read the classics - To Kill a Mockingbird, Catch-22, Hamlet, for English, which I liked but only because we had to analyze “deeper meaning” and that was more fun than I knew it could be (but that’s a story for another time).&lt;/p&gt;
 
-&lt;p&gt;Hugo is the newfangled fancy thing I am trying and it is not easy. The front page is pretty and it lures you in. The defaults work pretty well but then you start to customize it and there are gaps in the documentation. Use &lt;code&gt; {{ delimit .Params.categories “, ” }} &lt;/code&gt; to create comma separated categories. Oh really? Where do I stick this? It looks like it’s a function so I stuck it with the other functions in the layouts (overriding the themes defaults) but it wouldn’t render. I’ve spent about 1 hour on this issue already and it really shouldn’t be this hard. But part of this summer is learning about how to just keep moving forward in the face of all the little details being wrong and not correctly configured. Which I get is how things get done. But I don’t like it.&lt;/p&gt;
+&lt;p&gt;But not so much recently. I have to read textbooks during the year - so Physical Chemistry, Linear Algebra and Operating Systems when school is in session. But not really during breaks or for fun. I read articles online and magazines on plane and yes, I guess that does count as reading. But there is something about reading good old fashioned book that I just haven’t done in what seems like forever.&lt;/p&gt;
 
-&lt;p&gt;I also wanted some place to write up cool solutions that I had pieced together from various stack overflow answers, obscure documentation and creative tinkering. A place to feature mini projects I did that weren’t resume or portfolio worthy but could be helpful nonetheless.&lt;/p&gt;
-
-&lt;p&gt;There’s not really a plan for the blog but the basic layout is:&lt;/p&gt;
+&lt;p&gt;Luckily, I got a chance to kickstart the reading habit this summer because of my 40 minute commute (well it’s an hour back in rush hours) by bus. And S let me borrow her old nook. And the library has free e books to rent. Anyways, it came together. And I now remember the only books I can get through anymore fall into 3 categories.&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Category&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Explanations&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Musings&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Thoughts about things. Simply, really. Posts about ideas I stumble across, books I’ve read, things I’ve learned, etc.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Cheesy teen romance novels&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;That’s how I got through the 40 minutes on the light rail to the airport&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Jean’s Journey&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;This is my blog after all. Posts about seasonal routines and goals as well as tech related experiences (like GHC 2015!!)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Books about time management, organization&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;My not so secret obsession&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Projects&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;A place to feature things I’ve built.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Spotlights and Solutions&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;My favorite category. Writeups for problems I’ve fixed and spotlights of cool technologies that solve problems I encounter.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Books that fall under the “common misconception” category See below&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;The last category is interesting because it’s my favorite category. I tell people my favorite book is Catch - 22 which is true but it’s not the type of book I like to read. I like to read books that are stories. Stories about how the way we think is intuitive, which is wrong. These are books that I like to think are born of the Common misconceptions page on Wikipedia.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;Two such series which I have read and loved are Freakanomics (I’m on the third one) and Malcom Galdwell’s books (all of them). I like them because they are good stories. Stories about how looking at things from a different angle often yields an interesting and meaningful response. And stories about how math is important. And data. And the difference between correlation and causation.&lt;/p&gt;
 </description>
     </item>
     
