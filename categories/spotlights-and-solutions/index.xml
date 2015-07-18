@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spotlights And Solutions on Code Carrel</title>
+    <link>http://jeansung.github.io/blog/categories/spotlights-and-solutions/</link>
+    <description>Recent content in Spotlights And Solutions on Code Carrel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 Jul 2015 17:54:38 -0700</lastBuildDate>
+    <atom:link href="http://jeansung.github.io/blog/categories/spotlights-and-solutions/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>why I did this</title>
+      <link>http://jeansung.github.io/blog/post/why-I-did-this/</link>
+      <pubDate>Fri, 17 Jul 2015 17:54:38 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/why-I-did-this/</guid>
+      <description>&lt;p&gt;Jean&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
