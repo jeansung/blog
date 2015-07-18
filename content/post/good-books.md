@@ -3,7 +3,6 @@ Categories = ["Musings"]
 Tags = []
 date = "2015-07-17T18:19:43-07:00"
 title = "The only books I read (anymore)"
-
 +++
 
 I used to read a lot. I grew up reading lots of books from fantasy (all of Harry Potter like many) to cheesy teen romance novels. I even read a book once (okay the entire series) that was written in the style of an IM conversation.
@@ -14,7 +13,7 @@ But not so much recently. I have to read textbooks during the year - so Physical
 
 Luckily, I got a chance to kickstart the reading habit this summer because of my 40 minute commute (well it’s an hour back in rush hours) by bus. And S let me borrow her old nook. And the library has free e books to rent. Anyways, it came together. And I now remember the only books I can get through anymore fall into 3 categories.
 
-|  | |
+| Category | Notes |
 |:--|:--|
 | Cheesy teen romance novels |	That’s how I got through the 40 minutes on the light rail to the airport |
 | Books about time management, organization | My not so secret obsession |
