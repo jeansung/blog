@@ -5,6 +5,7 @@ theme: "material-design"
 contentdir: "content"
 layoutdir: "layouts"
 publishdir: "public"
+author: "Jean Sung"
 indexes:
   category: "categories"
 canonifyurls: true
