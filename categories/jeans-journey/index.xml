@@ -5,8 +5,26 @@
     <link>http://jeansung.github.io/blog/categories/jeans-journey/</link>
     <description>Recent content in Jeans Journey on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Jul 2015 17:54:38 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2015 21:52:31 -0700</lastBuildDate>
     <atom:link href="http://jeansung.github.io/blog/categories/jeans-journey/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to ask for help: Then &amp; Now</title>
+      <link>http://jeansung.github.io/blog/post/how-to-ask-tech-q/</link>
+      <pubDate>Sun, 26 Jul 2015 21:52:31 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/how-to-ask-tech-q/</guid>
+      <description>&lt;p&gt;Someone at work gave me some helpful advice on Friday and I realized that there is another step in learning how to ask questions.&lt;/p&gt;
+
+&lt;p&gt;The first stage in asking questions is the &amp;ldquo;help it&amp;rsquo;s broken&amp;rdquo; stage. It&amp;rsquo;s pretty much what it sounds like - something isn&amp;rsquo;t work, it didn&amp;rsquo;t compiled, maybe there was a seg fault, god forbid a merge conflict and you just give up immediately and ask for help. It&amp;rsquo;s what I call the &amp;ldquo;CS 5 on the first day&amp;rdquo; level of asking for help. It&amp;rsquo;s not particularly sophisticated as methods go because it doesn&amp;rsquo;t help the person who you&amp;rsquo;re asking for help from understand anything about your problem. It&amp;rsquo;s only really okay if you don&amp;rsquo;t expect to have a hand in fixing the problem or if you don&amp;rsquo;t know how else to ask for help. A slightly more sophisticated version of this: &amp;ldquo;helps it seg faulted or a I got a null pointer exception.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;The second stage of asking for help is &amp;ldquo;help its broken and I tried x, y, z&amp;rdquo;. This is a  more advanced way of asking questions. For a tutor it&amp;rsquo;s nice because it brings me up to speed oh what has been tried already so I don&amp;rsquo;t waste your time. It&amp;rsquo;s also more advanced because this means you at least tried something. A lot of problems can be solved with a simple print statement, a check for the empty case, some simple debugging. But that&amp;rsquo;s for another post.&lt;/p&gt;
+
+&lt;p&gt;That brings me to last Friday. I realized that asking for help at a job is different from asking for help from another fellow software engineer. At tutoring for classes, it is my job to help the students. Even if they don&amp;rsquo;t form the questions well, it&amp;rsquo;s still my job to help. I like helping. Part of my helping is also helping them form the questions. The point is that I&amp;rsquo;m there to help. I work on homework when I don&amp;rsquo;t have questions but for the most part, I know the solution and I know the kinds of problem they are stuck on. But at work it&amp;rsquo;s not the same. Yeah, the team is there when the newbie or the intern (me) needs help. And it definitely is worth it to ask questions instead of struggling for an entire morning on something related to the build that is very team specific. However, the team is composed of software engineers who themselves have stuff to do. So this brings me to the newest type of questions - distilling your question to the essence: What is wrong, and what is the essence of what you don&amp;rsquo;t understand, what you need from the other person. This way, you make sure that you spend their time well and don&amp;rsquo;t waste it asking small question after small question. This is especially important for software engineers who may have their day broken up enough by meetings which makes it hard to do critical thinking that leads to building better software.&lt;/p&gt;
+
+&lt;p&gt;The essence is that you need to think about the other person- how can you help them best help you. Another lesson in empathy. Stay tuned for a post about &amp;ldquo;things I learned being an adult for the summer.&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Why I did this</title>
