@@ -18,9 +18,10 @@ So the background for this is that I've been using Excel to budget my summer spe
 
 I created a google form to track my expenses. I would gather all the relevant information that I thought was necessary. See below:
 
-![](post/summer2015budget.png)
-
-![](post/summer2015budget2.png)
+![](http://i.imgur.com/hiZ0hd3.png =516x140)
+<br>
+<br>
+![](http://i.imgur.com/XivL2Nc.png)
 
 What I do: After I spend money, I collect my receipts and enter in the information into the form and submit. 
 
