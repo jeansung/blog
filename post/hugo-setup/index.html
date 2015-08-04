@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Jean Sung | How to ask for help: Then &amp; Now</title>
+  <title>Jean Sung | My Hugo Website Setup</title>
   <link href="http://jeansung.github.io/blog/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="http://jeansung.github.io/blog/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -67,25 +67,73 @@
     <div class="row">
       <div class="col s12">
         <div class="card-panel">
-          <h4>How to ask for help: Then &amp; Now</h4>
+          <h4>My Hugo Website Setup</h4>
           <p>
           
             
-              <a href="http://jeansung.github.io/blog/categories/jeans-journey/">Jean&#39;s Journey</a>
+              <a href="http://jeansung.github.io/blog/categories/spotlights-and-solutions/">Spotlights and Solutions</a>
             
            
           </p>
-          <p><p>Someone at work gave me some helpful advice on Friday and I realized that there is another step in learning how to ask questions.</p>
+          <p>
 
-<p>The first stage in asking questions is the &ldquo;help it&rsquo;s broken&rdquo; stage. It&rsquo;s pretty much what it sounds like - something isn&rsquo;t work, it didn&rsquo;t compiled, maybe there was a seg fault, god forbid a merge conflict and you just give up immediately and ask for help. It&rsquo;s what I call the &ldquo;CS 5 on the first day&rdquo; level of asking for help. It&rsquo;s not particularly sophisticated as methods go because it doesn&rsquo;t help the person who you&rsquo;re asking for help from understand anything about your problem. It&rsquo;s only really okay if you don&rsquo;t expect to have a hand in fixing the problem or if you don&rsquo;t know how else to ask for help. A slightly more sophisticated version of this: &ldquo;helps it seg faulted or a I got a null pointer exception.&rdquo;</p>
+<h3 id="getting-started:64a00e54bc112d22b252689389accbce">Getting Started</h3>
 
-<p>The second stage of asking for help is &ldquo;help its broken and I tried x, y, z&rdquo;. This is a  more advanced way of asking questions. For a tutor it&rsquo;s nice because it brings me up to speed oh what has been tried already so I don&rsquo;t waste your time. It&rsquo;s also more advanced because this means you at least tried something. A lot of problems can be solved with a simple print statement, a check for the empty case, some simple debugging. But that&rsquo;s for another post.</p>
+<p>I was lured to use <a href="http://gohugo.io/">Hugo</a> because of its pretty front end on the main website and the promise that I could develop in Markdown. I have 3 websites, my <a href="http://jeansung.github.io/frontpage/">front page</a>, my <a href="http://jeansung.github.io/blog/">blog</a> and my <a href="http://jeansung.github.io/Projects/">portfolio</a> and the first two are setup through hugo. Here&rsquo;s my setup story.</p>
 
-<p>That brings me to last Friday. I realized that asking for help at a job is different from asking for help from another fellow software engineer. At tutoring for classes, it is my job to help the students. Even if they don&rsquo;t form the questions well, it&rsquo;s still my job to help. I like helping. Part of my helping is also helping them form the questions. The point is that I&rsquo;m there to help. I work on homework when I don&rsquo;t have questions but for the most part, I know the solution and I know the kinds of problem they are stuck on. But at work it&rsquo;s not the same. Yeah, the team is there when the newbie or the intern (me) needs help. And it definitely is worth it to ask questions instead of struggling for an entire morning on something related to the build that is very team specific. However, the team is composed of software engineers who themselves have stuff to do. So this brings me to the newest type of questions - distilling your question to the essence: What is wrong, and what is the essence of what you don&rsquo;t understand, what you need from the other person. This way, you make sure that you spend their time well and don&rsquo;t waste it asking small question after small question. This is especially important for software engineers who may have their day broken up enough by meetings which makes it hard to do critical thinking that leads to building better software.</p>
+<h3 id="my-setup:64a00e54bc112d22b252689389accbce">My setup</h3>
 
-<p>The essence is that you need to think about the other person- how can you help them best help you. Another lesson in empathy. Stay tuned for a post about &ldquo;things I learned being an adult for the summer.&rdquo;</p>
+<p>I&rsquo;m hosting it on github pages. Here&rsquo;s my <a href="https://github.com/jeansung/MyPersonalPage/wiki">tutorial</a> how to set that up. I&rsquo;m using hugo with github pages. Here&rsquo;s the <a href="http://gohugo.io/tutorials/github-pages-blog/">tutorial</a> I used.</p>
+
+<p>When I test my changes, I run the command:</p>
+
+<pre><code>hugo server --watch --buildDrafts --theme=material-design
+</code></pre>
+
+<p>This command runs a local server for the website to sit on, build drafts, automatically reloads pages and then applies the theme. You can delete the <code>public/</code> folder to force the theme to reload completely.</p>
+
+<p>When I&rsquo;m ready to publish, I use a modified version of the tutorial&rsquo;s demo <code>deploy.sh</code> script.</p>
+
+<pre><code>#!/bin/bash
+
+# Black        0;30     Dark Gray     1;30
+# Red          0;31     Light Red     1;31
+# Green        0;32     Light Green   1;32
+# Brown/Orange 0;33     Yellow        1;33
+# Blue         0;34     Light Blue    1;34
+# Purple       0;35     Light Purple  1;35
+# Cyan         0;36     Light Cyan    1;36
+# Light Gray   0;37     White         1;37
+
+CYAN='\033[0;36m'
+NC='\033[0m'
+
+echo -e &quot;${CYAN} Deploying updates to GitHub... ${NC}&quot;
+
+
+# Build the project. 
+hugo --theme material-design
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&quot;Rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+git subtree push --prefix=public git@github.com:jeansung/blog.git gh-pages
+</code></pre>
+
+<h3 id="my-thoughts:64a00e54bc112d22b252689389accbce">My thoughts</h3>
+
+<p>It&rsquo;s not all rainbows and puppies. This set up is definitely better than my last set up, which consisted mainly of using github pages to host the website and then using <code>HTML</code> tinkering to create the content. That was hard coded and unsustainable. The templates here make it much easier to change only what I need to. However, the <code>git subtree</code> workflow is very messy when it goes wrong and I had to <code>rm -rf</code> some of the earlier repos that got messed up. My setup really doesn&rsquo;t use the version control in the sense of branching and rolling back. It&rsquo;s almost entirely a linear setup, so that works. But I could imagine more heartache if you needed to <code>git revert</code> some files. Also, I need to consolidate the websites to one site, but that&rsquo;s for a different day.</p>
 </p>
-          <p>26 Jul 2015
+          <p>3 Aug 2015
             
           </p>
           
@@ -96,13 +144,13 @@
     <div class="row">
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/resume-tips-newbie/"><i class="mdi-navigation-arrow-back"></i></a>
+        <a class="btn-floating btn-large disabled"><i class="mdi-navigation-arrow-back"></i></a>
       
       </div>
       <div class="col s6 m10 center">&nbsp</div>
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/git-hacks-wip/"><i class="mdi-navigation-arrow-forward"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/resume-tips-newbie/"><i class="mdi-navigation-arrow-forward"></i></a>
       
       </div>
     </div>
