@@ -5,8 +5,131 @@
     <link>http://jeansung.github.io/blog/categories/spotlights-and-solutions/</link>
     <description>Recent content in Spotlights And Solutions on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Jul 2015 22:05:06 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2015 22:01:05 -0700</lastBuildDate>
     <atom:link href="http://jeansung.github.io/blog/categories/spotlights-and-solutions/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Hugo Website Setup</title>
+      <link>http://jeansung.github.io/blog/post/hugo-setup/</link>
+      <pubDate>Mon, 03 Aug 2015 22:01:05 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/hugo-setup/</guid>
+      <description>
+
+&lt;h3 id=&#34;getting-started:64a00e54bc112d22b252689389accbce&#34;&gt;Getting Started&lt;/h3&gt;
+
+&lt;p&gt;I was lured to use &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; because of its pretty front end on the main website and the promise that I could develop in Markdown. I have 3 websites, my &lt;a href=&#34;http://jeansung.github.io/frontpage/&#34;&gt;front page&lt;/a&gt;, my &lt;a href=&#34;http://jeansung.github.io/blog/&#34;&gt;blog&lt;/a&gt; and my &lt;a href=&#34;http://jeansung.github.io/Projects/&#34;&gt;portfolio&lt;/a&gt; and the first two are setup through hugo. Here&amp;rsquo;s my setup story.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-setup:64a00e54bc112d22b252689389accbce&#34;&gt;My setup&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m hosting it on github pages. Here&amp;rsquo;s my &lt;a href=&#34;https://github.com/jeansung/MyPersonalPage/wiki&#34;&gt;tutorial&lt;/a&gt; how to set that up. I&amp;rsquo;m using hugo with github pages. Here&amp;rsquo;s the &lt;a href=&#34;http://gohugo.io/tutorials/github-pages-blog/&#34;&gt;tutorial&lt;/a&gt; I used.&lt;/p&gt;
+
+&lt;p&gt;When I test my changes, I run the command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server --watch --buildDrafts --theme=material-design
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command runs a local server for the website to sit on, build drafts, automatically reloads pages and then applies the theme. You can delete the &lt;code&gt;public/&lt;/code&gt; folder to force the theme to reload completely.&lt;/p&gt;
+
+&lt;p&gt;When I&amp;rsquo;m ready to publish, I use a modified version of the tutorial&amp;rsquo;s demo &lt;code&gt;deploy.sh&lt;/code&gt; script.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+# Black        0;30     Dark Gray     1;30
+# Red          0;31     Light Red     1;31
+# Green        0;32     Light Green   1;32
+# Brown/Orange 0;33     Yellow        1;33
+# Blue         0;34     Light Blue    1;34
+# Purple       0;35     Light Purple  1;35
+# Cyan         0;36     Light Cyan    1;36
+# Light Gray   0;37     White         1;37
+
+CYAN=&#39;\033[0;36m&#39;
+NC=&#39;\033[0m&#39;
+
+echo -e &amp;quot;${CYAN} Deploying updates to GitHub... ${NC}&amp;quot;
+
+
+# Build the project. 
+hugo --theme material-design
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&amp;quot;Rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+  then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+git push origin master
+git subtree push --prefix=public git@github.com:jeansung/blog.git gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;my-thoughts:64a00e54bc112d22b252689389accbce&#34;&gt;My thoughts&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s not all rainbows and puppies. This set up is definitely better than my last set up, which consisted mainly of using github pages to host the website and then using &lt;code&gt;HTML&lt;/code&gt; tinkering to create the content. That was hard coded and unsustainable. The templates here make it much easier to change only what I need to. However, the &lt;code&gt;git subtree&lt;/code&gt; workflow is very messy when it goes wrong and I had to &lt;code&gt;rm -rf&lt;/code&gt; some of the earlier repos that got messed up. My setup really doesn&amp;rsquo;t use the version control in the sense of branching and rolling back. It&amp;rsquo;s almost entirely a linear setup, so that works. But I could imagine more heartache if you needed to &lt;code&gt;git revert&lt;/code&gt; some files. Also, I need to consolidate the websites to one site, but that&amp;rsquo;s for a different day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Resume Advice</title>
+      <link>http://jeansung.github.io/blog/post/resume-tips-newbie/</link>
+      <pubDate>Mon, 03 Aug 2015 21:52:16 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/resume-tips-newbie/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m not a professional resumé writing expert. But I&amp;rsquo;ve been getting practice updating mine for about 4 years now, since the senior year of high school (when applying to colleges) to now when I&amp;rsquo;m about to look for a real full time job on my way out of college (one more year left).&lt;/p&gt;
+
+&lt;p&gt;For reference, my &lt;a href=&#34;https://github.com/jeansung/ResumeCollection&#34;&gt;resume collection&lt;/a&gt; my &lt;a href=&#34;https://github.com/jeansung/ResumeTemplate&#34;&gt;resume templates&lt;/a&gt;, or my &lt;a href=&#34;https://github.com/jeansung/ResumeCollection/raw/master/master_resume/JEANSUNG_RESUME.pdf&#34;&gt;current resume&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is my advice for how to present a summer experience, a project you did on a resume so that all the important information is communicated.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-you-did:bd80578ac8a5ed369aea3c62f0d851c4&#34;&gt;What you did&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s pretty obvious but you need to write about what you actually do. This is a description of the job that was performed, the piece of software developed or created. For example,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;-  Developed educational iPad game for middle school students&lt;/li&gt;
+&lt;li&gt;-  Wrote a client library for XYZ API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;how-you-did-it:bd80578ac8a5ed369aea3c62f0d851c4&#34;&gt;How you did it&lt;/h3&gt;
+
+&lt;p&gt;Recruiters, in my experience like seeing what sort of technology was used. It lends legitimacy to your project (are you using the right tool for the job? hopefully!) and backs up your skills section (where did you use your python skills? Oh, this project!). This is about the programming languages used, the tools, technologies, APIs and libraries that your project relies on.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;- utilizing Java and JMonkey Game Engine&lt;/li&gt;
+&lt;li&gt;- with Python and Pandas and Numpy&lt;/li&gt;
+&lt;li&gt;- using Google BigQuery and gcs Command Line tools&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;why-it-matters:bd80578ac8a5ed369aea3c62f0d851c4&#34;&gt;Why it matters&lt;/h3&gt;
+
+&lt;p&gt;Cool project, but why? Cool work at your summer job, but why? Why were you necessary? Why were you a worthwhile intern or why was your project interesting? For a job, it&amp;rsquo;s always nice to have something about what your work did to help the company&amp;rsquo;s bottom line? If you have specific numbers, use them.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;- implemented xyz that saved 2 hours / week of employee time&lt;/li&gt;
+&lt;li&gt;- presented research to save company time and resources from unviable path&lt;/li&gt;
+&lt;li&gt;- improved latency from 200ms to 2ms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a project, motivate what you did by showing why the thing you built was useful or explain who could use it. This can also help you think about the usability of your tool.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;- educational game for middle school students to help them with their math skills&lt;/li&gt;
+&lt;li&gt;- created xyz with a user interface that reduced complexity of the front end view presented to customers&lt;/li&gt;
+&lt;li&gt;- connected X and Y to simplify using tool Z&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;note:bd80578ac8a5ed369aea3c62f0d851c4&#34;&gt;Note&lt;/h3&gt;
+
+&lt;p&gt;If you are writing about a summer job for a tech company, be sure to check with your manager or your HR team about what you can and cannot say about what you did. Especially if you worked for a national lab or signed a really long NDA. Getting a new job is good! Getting sued for breach of contract and leaking trade secrets is not.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Git Hacks - WIP Edition</title>
