@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Jean Sung | My Hugo Website Setup</title>
+  <title>Jean Sung | Using Google Forms to Budget</title>
   <link href="http://jeansung.github.io/blog/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="http://jeansung.github.io/blog/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -67,7 +67,7 @@
     <div class="row">
       <div class="col s12">
         <div class="card-panel">
-          <h4>My Hugo Website Setup</h4>
+          <h4>Using Google Forms to Budget</h4>
           <p>
           
             
@@ -77,63 +77,33 @@
           </p>
           <p>
 
-<h3 id="getting-started:64a00e54bc112d22b252689389accbce">Getting Started</h3>
+<h4 id="before-the-summer:ff2dc01f53c5092c45e82cd6a8ccdc4a">Before the summer</h4>
 
-<p>I was lured to use <a href="http://gohugo.io/">Hugo</a> because of its pretty front end on the main website and the promise that I could develop in Markdown. I have 3 websites, my <a href="http://jeansung.github.io/frontpage/">front page</a>, my <a href="http://jeansung.github.io/blog/">blog</a> and my <a href="http://jeansung.github.io/Projects/">portfolio</a> and the first two are setup through hugo. Here&rsquo;s my setup story.</p>
+<p>So the background for this is that I&rsquo;ve been using Excel to budget my summer spending since the summer after high school. A lot has changed since then. Back in Summer 2012, I spent less than $1000 for the entire summer, lived at home and worked 7 hours / week at a minimum wage job. This summer, I&rsquo;m living with friends in Seattle, working full time at an internship, spending about $4000 for the summer. I used to spend money by my parents credit card and cash. Now I have my own credit card. I pay rent and buy groceries.</p>
 
-<h3 id="my-setup:64a00e54bc112d22b252689389accbce">My setup</h3>
+<p><strong>Then:</strong> Excel or other tsv, tracked by week
+<br>
+<strong>Now:</strong> Google Forms and Google spreadsheet</p>
 
-<p>I&rsquo;m hosting it on github pages. Here&rsquo;s my <a href="https://github.com/jeansung/MyPersonalPage/wiki">tutorial</a> how to set that up. I&rsquo;m using hugo with github pages. Here&rsquo;s the <a href="http://gohugo.io/tutorials/github-pages-blog/">tutorial</a> I used.</p>
+<h4 id="summer-setup:ff2dc01f53c5092c45e82cd6a8ccdc4a">Summer setup</h4>
 
-<p>When I test my changes, I run the command:</p>
+<p>I created a google form to track my expenses. I would gather all the relevant information that I thought was necessary. See below:</p>
 
-<pre><code>hugo server --watch --buildDrafts --theme=material-design
-</code></pre>
+<p><img src="post/summer2015budget.png" alt="" /></p>
 
-<p>This command runs a local server for the website to sit on, build drafts, automatically reloads pages and then applies the theme. You can delete the <code>public/</code> folder to force the theme to reload completely.</p>
+<p><img src="post/summer2015budget2.png" alt="" /></p>
 
-<p>When I&rsquo;m ready to publish, I use a modified version of the tutorial&rsquo;s demo <code>deploy.sh</code> script.</p>
+<p>What I do: After I spend money, I collect my receipts and enter in the information into the form and submit.</p>
 
-<pre><code>#!/bin/bash
+<h4 id="feedback:ff2dc01f53c5092c45e82cd6a8ccdc4a">Feedback</h4>
 
-# Black        0;30     Dark Gray     1;30
-# Red          0;31     Light Red     1;31
-# Green        0;32     Light Green   1;32
-# Brown/Orange 0;33     Yellow        1;33
-# Blue         0;34     Light Blue    1;34
-# Purple       0;35     Light Purple  1;35
-# Cyan         0;36     Light Cyan    1;36
-# Light Gray   0;37     White         1;37
+<p>The good: It&rsquo;s uniform and I can capture information in a way that makes sense to me. I have tried using online categories before and having a lot of preset values makes it difficult to see what I actually am spending in categories that matter to me. It was really easy to set up, and Google Forms have a good summary view.</p>
 
-CYAN='\033[0;36m'
-NC='\033[0m'
+<p>The bad: It&rsquo;s really hard, actually impossible to change the values you enter after you leave the form- if something gets messed up, there is no way to delete the data from the form entries. That makes the summary view useless because you can&rsquo;t erase mistaken values. Additionally, the summary view is not customizable. Plus, there is a lot of work to do per transaction, especially since most of my spending is done by credit card these days. It would be nice if I could do the set up just once and then just track remotely.</p>
 
-echo -e &quot;${CYAN} Deploying updates to GitHub... ${NC}&quot;
-
-
-# Build the project. 
-hugo --theme material-design
-
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg=&quot;Rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
-
-# Push source and build repos.
-git push origin master
-git subtree push --prefix=public git@github.com:jeansung/blog.git gh-pages
-</code></pre>
-
-<h3 id="my-thoughts:64a00e54bc112d22b252689389accbce">My thoughts</h3>
-
-<p>It&rsquo;s not all rainbows and puppies. This set up is definitely better than my last set up, which consisted mainly of using github pages to host the website and then using <code>HTML</code> tinkering to create the content. That was hard coded and unsustainable. The templates here make it much easier to change only what I need to. However, the <code>git subtree</code> workflow is very messy when it goes wrong and I had to <code>rm -rf</code> some of the earlier repos that got messed up. My setup really doesn&rsquo;t use the version control in the sense of branching and rolling back. It&rsquo;s almost entirely a linear setup, so that works. But I could imagine more heartache if you needed to <code>git revert</code> some files. Also, I need to consolidate the websites to one site, but that&rsquo;s for a different day.</p>
+<p>The next: For the fall, I am try using <a href="https://www.mint.com/">Mint</a>. Stay tuned for a review on that!</p>
 </p>
-          <p>3 Aug 2015
+          <p>4 Aug 2015
             
           </p>
           
@@ -144,13 +114,13 @@ git subtree push --prefix=public git@github.com:jeansung/blog.git gh-pages
     <div class="row">
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/google-form-budget/"><i class="mdi-navigation-arrow-back"></i></a>
+        <a class="btn-floating btn-large disabled"><i class="mdi-navigation-arrow-back"></i></a>
       
       </div>
       <div class="col s6 m10 center">&nbsp</div>
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/resume-tips-newbie/"><i class="mdi-navigation-arrow-forward"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/hugo-setup/"><i class="mdi-navigation-arrow-forward"></i></a>
       
       </div>
     </div>
