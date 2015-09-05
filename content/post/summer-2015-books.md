@@ -1,10 +1,11 @@
 +++
 Categories = ["Jean's Journey"]
 Tags = []
-date = "2015-08-26T21:52:31-07:00"
+date = "2015-09-05T21:52:31-07:00"
 title = "Summer 2015: Books"
-draft = true
 +++
+
+At long last, here is the final count of the books that I managed to read over the summer. 
 
 
 | Books | Author | Review |
@@ -16,4 +17,6 @@ draft = true
 | [Shopaholic to the Stars](http://www.sophiekinsella.co.uk/book_detail.php?b=7) | Sophia Kinsella | I really only read this because I've read the previous god knows how many books (7th!!) in this series. It's sort of trashy and sort of cheap, but it's a very quick read.|
 | [The Ghost Map](http://www.theghostmap.com/) | Steven Johnson | I love this story. I did a presentation on the development of the sewage system in London and the 1848 Cholera outbreak. It was an indepth look at all aspects of the disease from more angles than I thought possible. **Definitely** worth it. It was so great. |
 | [We Were Liars](http://www.goodreads.com/book/show/16143347-we-were-liars) | E. Lockhart | It was a good read. A page turner, and a good book that was aimed at my demographic, for once. It was half a teen romance and half a teen family drama. The mystery in the pages really help keep it going. I got through this book on a train and a plane. It's definitely a enthralling read.  However, retrospectively, I guess I have to agree with the [New York Times Review](http://www.nytimes.com/2014/05/11/books/review/we-were-liars-by-e-lockhart.html?_r=0).|
-| [Getting Things Done](http://gettingthingsdone.com/) | David Allen | I think I've read this before. It's good, and I like organizational books, but the system is a bit complex and I think it would work better with a consistent work schedule rather than a busy and every shifting school schedule. People say to treat your job like a 9-5 but my job is more like a 10am-12am. Or something like that. |
+| [Getting Things Done](http://gettingthingsdone.com/) | David Allen | I think I've read this before. It's good, and I like organizational books, but the system is a bit complex and I think it would work better with a consistent work schedule rather than a busy and every shifting school schedule. People say to treat your job like a 9-5 but my job is more like a 10am-12am. Or something like that. Ahh, clinic. |
+| GRE Math, Verbal prep | Kaplan | This is because I decided for some reason it would be a good idea to sign up for and then study for and then take the August GRE. Oh silly me. It was fine. Just a long test. Luckily, I remembered most of my middle school and high school math. Shame there's no calculus. | 
+
