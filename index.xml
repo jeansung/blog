@@ -5,8 +5,17 @@
     <link>http://jeansung.github.io/blog/</link>
     <description>Recent content on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2015 21:52:31 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2015 20:19:43 -0700</lastBuildDate>
     <atom:link href="http://jeansung.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>It&#39;s okay to cry and 15 Things I Learned My Senior Fall</title>
+      <link>http://jeansung.github.io/blog/post/fall2015/</link>
+      <pubDate>Wed, 16 Dec 2015 20:19:43 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/fall2015/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Summer 2015: Books</title>
@@ -362,15 +371,6 @@ git push -u origin feature-branch
 
 &lt;p&gt;Two such series which I have read and loved are Freakanomics (I’m on the third one) and Malcom Galdwell’s books (all of them). I like them because they are good stories. Stories about how looking at things from a different angle often yields an interesting and meaningful response. And stories about how math is important. And data. And the difference between correlation and causation.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>5 Things I learned searching for jobs.</title>
-      <link>http://jeansung.github.io/blog/post/fall2015_jobs/</link>
-      <pubDate>Fri, 17 Jul 2015 18:19:43 -0700</pubDate>
-      
-      <guid>http://jeansung.github.io/blog/post/fall2015_jobs/</guid>
-      <description></description>
     </item>
     
     <item>
