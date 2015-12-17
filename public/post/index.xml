@@ -5,8 +5,17 @@
     <link>http://jeansung.github.io/blog/post/</link>
     <description>Recent content in Posts on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2015 21:52:31 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2015 20:19:43 -0700</lastBuildDate>
     <atom:link href="http://jeansung.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>It&#39;s okay to cry and 15 Things I Learned My Senior Fall</title>
+      <link>http://jeansung.github.io/blog/post/fall2015/</link>
+      <pubDate>Wed, 16 Dec 2015 20:19:43 -0700</pubDate>
+      
+      <guid>http://jeansung.github.io/blog/post/fall2015/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Summer 2015: Books</title>
@@ -318,15 +327,6 @@ git push -u origin feature-branch
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/7434449/why-use-git-rm-to-remove-a-file-instead-of-rm&#34;&gt;Using git rm &amp;ndash;cached &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>5 Things I learned searching for jobs.</title>
-      <link>http://jeansung.github.io/blog/post/fall2015_jobs/</link>
-      <pubDate>Fri, 17 Jul 2015 18:19:43 -0700</pubDate>
-      
-      <guid>http://jeansung.github.io/blog/post/fall2015_jobs/</guid>
-      <description></description>
     </item>
     
     <item>
