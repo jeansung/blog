@@ -131,20 +131,12 @@ I've tried this method twice. Once in the fall of my sophomore year (so fall 201
 
 I'm going to use 3 things to keep me organized this year. 
 
-| Tool | Content | 
-|:-----|:--------|
-| Planner | Some appointments - like special occasions and lunches. Homework, Exams. |
-| Google Calendar | Regular recurring events like classes, and appointments. |
-| Common Place Book | Ongoing thoughts and ideas. | 
 
 | Tool | Product | Content |
 |:------|:-------|:-------|
 | Calendar | Google Calendar  |  Some appointments - like special occasions and lunches. Homework, Exams.  |
-| Planner | | |
-| Commonplace Book | | | 
-
-
-
+| Planner | Bloom Weekly 7 x 9 Planner | Some appointments - like special occasions and lunches. Homework, Exams. |
+| Commonplace Book | Think Happy Be Happy Spiral Notebook | Ongoing thoughts and ideas. | 
 
 
 For the planner, I ended up going with [this](http://www.amazon.com/gp/product/B011PBKWG4?psc=1&redirect=true&ref_=od_aui_detailpages00). For the paper planner, I'm using stickers, and washi tape. I plan to use the notes section on the bottom for exercise, to help myself track my daily activity. 
