@@ -23,7 +23,7 @@ This post is kind of long. So here's a mini table of contents up front. It's abo
 
 I did a lot of research for this post. Shoutout to all the girls on tumblr and youtube who's life is perfect and together. For example:
 
-![](/static/planner_pics/perfect1.png)
+![](static/planner_pics/perfect1.png)
 ![](planner_pics/perfect2.jpg)
 ![](planner_pics/perfect3.jpg)
 
