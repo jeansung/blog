@@ -143,6 +143,8 @@ I'm going to use 3 things to keep me organized this year.
 | [David and Goliath](http://gladwell.com/david-and-goliath/) | Malcolm Gladwell | A new book by one of my favorite authors. This was an excellent read. It's another one of those books that weaves together stories you don't hear about into patterns that don't seem intuitive until they are. It's cleverly woven together, backed by math and logic. I love these books. Also checkout his [other books](http://gladwell.com/). |  
 
 
+
+
 For the planner, I ended up going with [this](http://www.amazon.com/gp/product/B011PBKWG4?psc=1&redirect=true&ref_=od_aui_detailpages00). For the paper planner, I'm using stickers, and washi tape. I plan to use the notes section on the bottom for exercise, to help myself track my daily activity. 
 
 Here's my plan for how to use the planner. At the beginning of the semester, I will compile a list of chores (gym days, vacuum, laundry (regular, bedding), backup, dishes, planning, budget (?)). Then, at the end of each week (on Friday), I will take time out of my week and 
