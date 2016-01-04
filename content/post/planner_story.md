@@ -137,9 +137,9 @@ I'm going to use 3 things to keep me organized this year.
 | Google Calendar | Regular recurring events like classes, and appointments. |
 | Common Place Book | Ongoing thoughts and ideas. | 
 
-| Tools | Content | Review |
-|:------|:-------|:-------|
-| Planner | Some appointments - like special occasions and lunches. Homework, Exams.  | a |
+| Tools | Content | 
+|:------|:-------|
+| Planner | Some appointments - like special occasions and lunches. Homework, Exams.  | 
 
 
 
