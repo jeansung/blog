@@ -118,9 +118,13 @@ g. With electronics there's a pipe dream that it might let you do everything tog
 ## Things I need to track
 
 a. events - appointments, classes, events on campus, talks I want to go to, lunches that I agree to have with people. The best way to characterize this category is events where my time is explicitly blocked out. Because of shared events, etc, this has to go in google calendar. Plus I like knowing where I am needed and when on a daily basis. Google Calendar is a solution that I have known and loved for this.
+
 b. homework and other recurring tasks like chores, these usually happen on the same day every week 
+
 c. one off big tasks - like exams or other important due dates like term papers
-d. ne off small tasks  that I think of - go to target, or finishing grading X by this Friday. 
+
+d. one off small tasks  that I think of - go to target, or finishing grading X by this Friday
+
 e. ongoing thoughts - like a collection of thoughts for my blog post. I hate keeping this on my computer because it just sits there and I have it in like 5 different places. Plus, I think these are more thoughtful if I write them out. These also include more longer term to dos that don't have a specific timeline attached to it.
 
 ## Plan 
