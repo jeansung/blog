@@ -8,17 +8,6 @@ title = "Planning Planners: A 4 year journey "
 
 +++
 
-This post is kind of long. So here's a mini table of contents up front. It's about my 4 year journey and work in finding a good planner system. 
-
-## Contents 
-* [Introduction](#introduction)
-* [What this post is](#what-this-post-is)
-* [What I've tried](#what-i've-tried)
-* [Factors to Consider](#factors-to-consider)
-* [Things I Need to Track](#things-i-need-to-track)
-* [Plan](#plan)
-
-
 ## Introduction
 
 I did a lot of research for this post. Shoutout to all the girls on tumblr and youtube who's life is perfect and together. For example:
