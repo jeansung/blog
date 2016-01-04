@@ -119,13 +119,13 @@ I've tried this method twice. Once in the fall of my sophomore year (so fall 201
 
 * events - appointments, classes, events on campus, talks I want to go to, lunches that I agree to have with people. The best way to characterize this category is events where my time is explicitly blocked out. Because of shared events, etc, this has to go in google calendar. Plus I like knowing where I am needed and when on a daily basis. Google Calendar is a solution that I have known and loved for this.
 
-* homework and other recurring tasks like chores, these usually happen on the same day every week 
+- homework and other recurring tasks like chores, these usually happen on the same day every week 
 
-* one off big tasks - like exams or other important due dates like term papers
+- one off big tasks - like exams or other important due dates like term papers
 
-* one off small tasks  that I think of - go to target, or finishing grading X by this Friday. 
+- one off small tasks  that I think of - go to target, or finishing grading X by this Friday. 
 
-* ongoing thoughts - like a collection of thoughts for my blog post. I hate keeping this on my computer because it just sits there and I have it in like 5 different places. Plus, I think these are more thoughtful if I write them out. These also include more longer term to dos that don't have a specific timeline attached to it.
+- ongoing thoughts - like a collection of thoughts for my blog post. I hate keeping this on my computer because it just sits there and I have it in like 5 different places. Plus, I think these are more thoughtful if I write them out. These also include more longer term to dos that don't have a specific timeline attached to it.
 
 ## Plan 
 
@@ -142,7 +142,7 @@ For the planner, I ended up going with [this](http://www.amazon.com/gp/product/B
 
 Here's my plan for how to use the planner. At the beginning of the semester, I will compile a list of chores (gym days, vacuum, laundry (regular, bedding), backup, dishes, planning, budget (?)). Then, at the end of each week (on Friday), I will take time out of my week and 
 
-* decorate the weekly spread with washi tape and small stickers
-* using stickies to take temp dates in the future 
+- decorate the weekly spread with washi tape and small stickers
+- using stickies to take temp dates in the future 
 
 I will update this post with my month, 3 month and 6 months progress update on what the weekly spreads look like and how I'm going. 
