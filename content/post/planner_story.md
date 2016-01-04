@@ -24,12 +24,12 @@ This post is kind of long. So here's a mini table of contents up front. It's abo
 I did a lot of research for this post. Shoutout to all the girls on tumblr and youtube who's life is perfect and together. For example:
 
 ![](/planner_pics/perfect1.png)
-![](planner_pics/perfect2.jpg)
-![](planner_pics/perfect3.jpg)
+![](/planner_pics/perfect2.jpg)
+![](/planner_pics/perfect3.jpg)
 
 Especially their handwriting. One of my best friends has perfect handwriting: 
 
-![](planner_pics/paula.jpg)
+![](/planner_pics/paula.jpg)
 
 I should just hire her to write all my crap down. Her handwriting is literally so perfect it could be its own font. Mine's okay when I try and kinda gross when I don't. 
 
@@ -49,7 +49,7 @@ Here's a list of what I have tried so far. For each method, there's a descriptio
 ### Google Calendar + gTask
 I used this during Fall 2014 and I think intermittently in the semester before. Google calendar is pretty standard fare, just having events and recurring classes, etc. gTask is a google calendar add on task manager where you can add tasks onto the same interface as google calendar. You can add homework, chores, etc in the slot where the day events normally go. Here is an example:
 
-![](planner_pics/gtask.png)
+![](/planner_pics/gtask.png)
 
 * Good: You can put everything in one place, which is nice because that means you only have to check one thing in the morning. That’s nice. Also, I used a phone app that let you see things on the google and do recurring tasks (like for problem sets due every week or laundry, which happens on Fridays). 
 
@@ -60,7 +60,7 @@ I used this during Fall 2014 and I think intermittently in the semester before. 
 ### Todoist
 I used this primarily during Fall 2015 and mostly during the second half. The idea with this tool is that you write down what you need to get done and it acts as a dynamic check lists. It is a place to collect homework (e.g. recurring problem sets), due dates, checklists of chores. 
 
-![](planner_pics/todoist.png)
+![](/planner_pics/todoist.png)
 
 * Good: You can do recurring events pretty easily. And the built in syntax is pretty nice to capture due dates easily from English. Also there’s a million apps for it. You can do desktop app, website, tablet, and phone app. But I will say I never really looked at the phone app. You get a productivity score which can be fun if you care (I don’t). Plus, you can look at what you have to do for the next 7 days, which is pretty handy.
 
@@ -71,8 +71,8 @@ I used this primarily during Fall 2015 and mostly during the second half. The id
 
 I used this all semester for Spring 2015 and tried to and failed to use this for Fall 2015. I wrote down homework due dates and exam dates. As well as special events dates. It is similar to [this one](http://www.moleskine.com/en/collections/model/product/12-months-weekly-notebook-black-soft-cover-large). 
 
-![](planner_pics/moleskine1.png)
-![](planner_pics/moleskine2.png)
+![](/planner_pics/moleskine1.png)
+![](/planner_pics/moleskine2.png)
 
 * Good: When it works it’s the greatest. I loved this so much. It can be so pretty. You can use colors to do color coding. I added stickers and washi tape and some weeks are absolutely instagram worthy (not pictured above- these weeks were messy and busy, a more accurate characterization of my time at Mudd). 
 
@@ -86,7 +86,7 @@ One piece of paper a week
 ### One piece of paper / week 
 I've tried this method twice. Once in the fall of my sophomore year (so fall 2013) and once for the beginning of my senior year (fall 2015). This is a good method because it is not a long term commitment because when you mess up, you can just move onto the next week. However, I do like having more things together. It's also surprisingly difficult to find a good place for a piece of paper. 
 
-![](planner_pics/weeklytemplate_v1.png)
+![](/planner_pics/weeklytemplate_v1.png)
 
 
 
