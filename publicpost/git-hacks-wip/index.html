@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Jean Sung | Git Hacks - WIP Edition</title>
+  <link href="http://jeansung.github.io/blog/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://jeansung.github.io/blog/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <link rel="shortcut icon"
+      href="http://faviconist.com/icons/51e9dbc6b26a497334d0d2bffe21426a/favicon.ico" />
+
+  <style type="text/css">
+  
+    footer.page-footer{background-image: url(http://jeansung.github.io/blog/images/default.png);}
+  
+  </style>
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="http://jeansung.github.io/blog"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="http://jeansung.github.io/blog/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+  </ul>
+  <div id="index-banner" class="parallax-container">
+  <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <h1 class="header center teal-text text-lighten-2">Witty Writeups</h1>
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+        <div class="row center">
+        
+        
+        
+          <a href="https://twitter.com/jeansung94"><img src="http://jeansung.github.io/blog/images/twitter-dreamstale71.png"></a>
+        
+        
+          <a href="https://www.linkedin.com/in/jeansung"><img src="http://jeansung.github.io/blog/images/linkedin-dreamstale45.png"></a>
+        
+        
+          <a href="https://www.instagram.com/jeansung94"><img src="http://jeansung.github.io/blog/images/instagram-dreamstale43.png"></a>
+        
+        
+          <a href="http://www.meanjeantherecessqueen.tumblr.com/"><img src="http://jeansung.github.io/blog/images/tumblr-dreamstale70.png"></a>
+        
+        
+          <a href="https://github.com/jeansung"><img src="http://jeansung.github.io/blog/images/github2-dreamstale35.png"></a>
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    
+      <img src="http://jeansung.github.io/blog/images/default.png">
+    
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel">
+          <h4>Git Hacks - WIP Edition</h4>
+          <p>
+          
+            
+              <a href="http://jeansung.github.io/blog/categories/spotlights-and-solutions/">Spotlights and Solutions</a>
+            
+           
+          </p>
+          <p>
+
+<p>Today&rsquo;s post is about some quick <code>git</code> command line tricks if you are doing some work in progress (WIP).</p>
+
+<p>Scenario: You are working on the <code>master</code> branch and then realize you are going to have to test these changes on a bigger scale (perhaps cross repo) and thus new to push your changes to a new branch.</p>
+
+<p>Setup: On master branch, some <code>git add</code> have been made, no commits yet.</p>
+
+<p>Solution:</p>
+
+<p>First, remove all the staged files from the master branch. Use <code>git rm --cached</code> and then either add the file path or the directory path to be removed. You can use <code>git status</code> to find out what files are not staged yet. For example:</p>
+
+<pre><code class="language-bash"># Originally, everything is up to date
+# but on the wrong branch 
+git status 
+On branch feature-branch
+Your branch is up to date with origin/master
+nothing to commit, working directory clean 
+
+# Remove those files 
+git rm --cached foo/
+git rm --cached bar/foo.java
+
+# Good, ready to be added to another branch
+git status 
+Changes not staged for commit:
+	modified: foo/
+Untracked files:
+	bar/foo.java
+</code></pre>
+
+<p>Make sure to have the <code>--cached</code> flag because that means that you are removing the file from the git index to reset the tracking but not the actual file from your local file system. You don&rsquo;t want that, because you are about to push these changes to another branch.</p>
+
+<p>Second, checkout a new branch. The cool thing is that the current state of files follows you to the current branch. Then, push to remote repo, setting up tracking to be from the origin (usual use case).</p>
+
+<pre><code>git checkout -b feature-branch
+git add .
+git commit -m &quot;Pushing changes to local feature branch&quot;
+git push -u origin feature-branch
+</code></pre>
+
+<p>The last command, <code>git push -u origin feature-branch</code> sets up the remote branch to track changes from. In the future, you only need to write <code>git push -u feature-branch</code> and your changes will be pushed to the remote branch of the same name as your local branch.</p>
+
+<h3 id="sources:9325ce92720b6ac61078754c07b964c3">Sources</h3>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/1351567/putting-uncommitted-changes-at-master-to-a-new-branch-by-git">Pushing uncommitted changes to a new branch</a></li>
+<li><a href="http://stackoverflow.com/questions/7434449/why-use-git-rm-to-remove-a-file-instead-of-rm">Using git rm &ndash;cached </a></li>
+</ul>
+</p>
+          <p>21 Jul 2015
+            
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/how-to-ask-tech-q/"><i class="mdi-navigation-arrow-back"></i></a>
+      
+      </div>
+      <div class="col s6 m10 center">&nbsp</div>
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/good-books/"><i class="mdi-navigation-arrow-forward"></i></a>
+      
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      
+      <div class="right">Design by <a class="grey-text text-lighten-4" href="http://pdevty.github.io/blog/">pdevty</a> &amp; Hosted on <a class="grey-text text-lighten-4" href="http://github.com">GitHub</a>  </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://jeansung.github.io/blog/js/materialize.min.js"></script>
+  <script src="http://jeansung.github.io/blog/js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </body>
+</html>
+

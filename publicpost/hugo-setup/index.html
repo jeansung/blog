@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Jean Sung | My Hugo Website Setup</title>
+  <link href="http://jeansung.github.io/blog/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://jeansung.github.io/blog/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <link rel="shortcut icon"
+      href="http://faviconist.com/icons/51e9dbc6b26a497334d0d2bffe21426a/favicon.ico" />
+
+  <style type="text/css">
+  
+    footer.page-footer{background-image: url(http://jeansung.github.io/blog/images/default.png);}
+  
+  </style>
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="http://jeansung.github.io/blog"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="http://jeansung.github.io/blog/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+  </ul>
+  <div id="index-banner" class="parallax-container">
+  <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <h1 class="header center teal-text text-lighten-2">Witty Writeups</h1>
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+        <div class="row center">
+        
+        
+        
+          <a href="https://twitter.com/jeansung94"><img src="http://jeansung.github.io/blog/images/twitter-dreamstale71.png"></a>
+        
+        
+          <a href="https://www.linkedin.com/in/jeansung"><img src="http://jeansung.github.io/blog/images/linkedin-dreamstale45.png"></a>
+        
+        
+          <a href="https://www.instagram.com/jeansung94"><img src="http://jeansung.github.io/blog/images/instagram-dreamstale43.png"></a>
+        
+        
+          <a href="http://www.meanjeantherecessqueen.tumblr.com/"><img src="http://jeansung.github.io/blog/images/tumblr-dreamstale70.png"></a>
+        
+        
+          <a href="https://github.com/jeansung"><img src="http://jeansung.github.io/blog/images/github2-dreamstale35.png"></a>
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    
+      <img src="http://jeansung.github.io/blog/images/default.png">
+    
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel">
+          <h4>My Hugo Website Setup</h4>
+          <p>
+          
+            
+              <a href="http://jeansung.github.io/blog/categories/spotlights-and-solutions/">Spotlights and Solutions</a>
+            
+           
+          </p>
+          <p>
+
+<h3 id="getting-started:64a00e54bc112d22b252689389accbce">Getting Started</h3>
+
+<p>I was lured to use <a href="http://gohugo.io/">Hugo</a> because of its pretty front end on the main website and the promise that I could develop in Markdown. I have 3 websites, my <a href="http://jeansung.github.io/frontpage/">front page</a>, my <a href="http://jeansung.github.io/blog/">blog</a> and my <a href="http://jeansung.github.io/Projects/">portfolio</a> and the first two are setup through hugo. Here&rsquo;s my setup story.</p>
+
+<h3 id="my-setup:64a00e54bc112d22b252689389accbce">My setup</h3>
+
+<p>I&rsquo;m hosting it on github pages. Here&rsquo;s my <a href="https://github.com/jeansung/MyPersonalPage/wiki">tutorial</a> how to set that up. I&rsquo;m using hugo with github pages. Here&rsquo;s the <a href="http://gohugo.io/tutorials/github-pages-blog/">tutorial</a> I used.</p>
+
+<p>When I test my changes, I run the command:</p>
+
+<pre><code>hugo server --watch --buildDrafts --theme=material-design
+</code></pre>
+
+<p>This command runs a local server for the website to sit on, build drafts, automatically reloads pages and then applies the theme. You can delete the <code>public/</code> folder to force the theme to reload completely.</p>
+
+<p>When I&rsquo;m ready to publish, I use a modified version of the tutorial&rsquo;s demo <code>deploy.sh</code> script.</p>
+
+<pre><code>#!/bin/bash
+
+# Black        0;30     Dark Gray     1;30
+# Red          0;31     Light Red     1;31
+# Green        0;32     Light Green   1;32
+# Brown/Orange 0;33     Yellow        1;33
+# Blue         0;34     Light Blue    1;34
+# Purple       0;35     Light Purple  1;35
+# Cyan         0;36     Light Cyan    1;36
+# Light Gray   0;37     White         1;37
+
+CYAN='\033[0;36m'
+NC='\033[0m'
+
+echo -e &quot;${CYAN} Deploying updates to GitHub... ${NC}&quot;
+
+
+# Build the project. 
+hugo --theme material-design
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&quot;Rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+git subtree push --prefix=public git@github.com:jeansung/blog.git gh-pages
+</code></pre>
+
+<h3 id="my-thoughts:64a00e54bc112d22b252689389accbce">My thoughts</h3>
+
+<p>It&rsquo;s not all rainbows and puppies. This set up is definitely better than my last set up, which consisted mainly of using github pages to host the website and then using <code>HTML</code> tinkering to create the content. That was hard coded and unsustainable. The templates here make it much easier to change only what I need to. However, the <code>git subtree</code> workflow is very messy when it goes wrong and I had to <code>rm -rf</code> some of the earlier repos that got messed up. My setup really doesn&rsquo;t use the version control in the sense of branching and rolling back. It&rsquo;s almost entirely a linear setup, so that works. But I could imagine more heartache if you needed to <code>git revert</code> some files. Also, I need to consolidate the websites to one site, but that&rsquo;s for a different day.</p>
+</p>
+          <p>3 Aug 2015
+            
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/google-form-budget/"><i class="mdi-navigation-arrow-back"></i></a>
+      
+      </div>
+      <div class="col s6 m10 center">&nbsp</div>
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://jeansung.github.io/blog/post/resume-tips-newbie/"><i class="mdi-navigation-arrow-forward"></i></a>
+      
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      
+      <div class="right">Design by <a class="grey-text text-lighten-4" href="http://pdevty.github.io/blog/">pdevty</a> &amp; Hosted on <a class="grey-text text-lighten-4" href="http://github.com">GitHub</a>  </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://jeansung.github.io/blog/js/materialize.min.js"></script>
+  <script src="http://jeansung.github.io/blog/js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </body>
+</html>
+
