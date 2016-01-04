@@ -11,12 +11,12 @@ title = "Planning Planners: A 4 year journey "
 This post is kind of long. So here's a mini table of contents up front. It's about my 4 year journey and work in finding a good planner system. 
 
 ## Contents 
-* [introduction](#introduction)
-* [A](#what-this-post-is)
-* [B](#what-i've-tried)
-* [C](#factors-to-consider)
-* [D](#things-i-need-to-track)
-* [E](#plan)
+* [Introduction](#introduction)
+* [What this post is](#what-this-post-is)
+* [What I've tried](#what-i've-tried)
+* [Factors to Consider](#factors-to-consider)
+* [Things I Need to Track](#things-i-need-to-track)
+* [Plan](#plan)
 
 
 ## Introduction
