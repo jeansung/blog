@@ -5,7 +5,7 @@ date = "2016-01-05T00:26:50-08:00"
 title = "10 Things I Learned Doing (Almost) 20 Interviews"
 +++
 
-This semester I spent a long time interviewing for a full time job. Apparently CS interview season for new grads is in the fall. Early fall. I started interviewing seriously mid September and accepted my offer from Facebook late November. Here's a few things, 9 specifically, I learned after 18 interviews (counting full day rounds as 1) and 30+ hours of interviewing.   
+This semester I spent a long time interviewing for a full time job. Apparently CS interview season for new grads is in the fall. Early fall. I started interviewing seriously mid September and accepted my offer from Facebook late November. Here's a few things, 10 specifically, I learned after 18 interviews (counting full day rounds as 1) and 30+ hours of interviewing.   
 
 1) Regarding my time line, everyone's different. I had friends who accepted a job even before school started, and who started interviewing in August. August!! Woah!!. I have friends who are still interviewing. And everywhere in between. It's okay either way. But I will say that it's good to be done. I don't really like interviewing. 
 
