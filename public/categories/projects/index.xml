@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Witty Writeups</title>
-    <link>http://localhost:1313/blog/categories/projects/</link>
+    <link>http://jeansung.github.io/blog/categories/projects/</link>
     <description>Recent content in Projects on Witty Writeups</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Jul 2015 21:32:11 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2016 16:31:16 -0700</lastBuildDate>
+    <atom:link href="http://jeansung.github.io/blog/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>youtube clip creator</title>
-      <link>http://localhost:1313/blog/post/youtube-clip-creator/</link>
-      <pubDate>Fri, 17 Jul 2015 21:32:11 -0700</pubDate>
+      <title>Reflections on College Graduation</title>
+      <link>http://jeansung.github.io/blog/post/college-grad-reflections/</link>
+      <pubDate>Mon, 25 Jul 2016 16:31:16 -0700</pubDate>
       
-      <guid>http://localhost:1313/blog/post/youtube-clip-creator/</guid>
+      <guid>http://jeansung.github.io/blog/post/college-grad-reflections/</guid>
       <description></description>
     </item>
     
