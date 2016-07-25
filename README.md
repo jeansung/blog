@@ -22,7 +22,7 @@ title = "college grad reflections"
 +++
 ```
 
-* Delete the categories in `Categories` that is not relevant, and update `title`. 
+* Delete the categories in `Categories` that is not relevant, and update `title`. Use `draft = true` to disable viewing on website.
 
 ## Uploading new changes 
 Please use `./deploy` or `./deploy <commit message>` to push new changes. 
