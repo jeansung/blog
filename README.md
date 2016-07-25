@@ -1,7 +1,6 @@
 ## Jean's technical blog
-* [homepage](http://jeansung.github.io/frontpage/)
+* [homepage](http://jeansung.github.io/)
 * [technical blog](http://jeansung.github.io/blog/)
-* [projects](http://jeansung.github.io/Projects/)
 
 ## Pre reqs
 * Install hugo via `brew install hugo`
